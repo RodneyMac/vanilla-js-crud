@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD APP</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark text-center">
+      <div class="container-fluid">
+        <div class="navbar-brand text-white m-auto">Create Task</div>
+      </div>
+    </nav>
+    <div class="container mt-4">
+      <div class="card border-secondary">
+        <div class="card-header bg-primary text-white">New Task</div>
+        <div class="card-body">
+          <form action="/save" method="POST">
+            <div class="mb-3">
+              <label for="title" class="form-label">Title</label>
+              <input type="text" class="form-control" id="title" name="title"/>
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Description</label>
+              <input type="text" class="form-control" id="description" name="description"/>
+            </div>
+            <div class="d-flex justify-content-around">
+              <button class="btn btn-success" title="Guardar">Save</button>
+              <a href="/" class="btn btn-secondary" title="Cancelar">Cancel</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
